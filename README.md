@@ -6,8 +6,7 @@ Arduino UNO VU Meter
     Push button conneted  pin 1  to ground with a 10k resistor.
     All leds cathodes to ground and anode connected through a 120 ohms resistor to Arduino pins.
     Resistor values change if different led colors are used.
-    Code adapted from Adafruit's amplietie code and Toni Birka VU-Meter: 
-    
+    Code adapted from Adafruit's amplietie code and Toni Birka VU-Meter:     
     https://www.youtube.com/watch?v=UDnqc9HgAX8
-    I added the VU With PEAK HOLD.
+    I added one more VU With PEAK HOLD.
     Enjoy it!
