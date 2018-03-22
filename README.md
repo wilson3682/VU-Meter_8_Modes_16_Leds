@@ -1,6 +1,6 @@
 # VU-Meter_8_Modes_16_Leds
 # Arduino UNO VU Meter
-# Video: 
+# Video: https://www.youtube.com/watch?v=hTV2mioBmoM&t=35s
     Compiled with Arduino IDE and ver.1.6.12, ver.1.8.5 by Wilson Carvajal
     Adafruit Electret Microphone Amplifier - MAX4466 with Adjustable Gain connected to Analogo Pin A5.
     Push button conneted  pin 1  to ground with a 10k resistor.
