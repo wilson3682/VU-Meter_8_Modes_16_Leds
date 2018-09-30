@@ -165,12 +165,14 @@ void Vu1() {
     if (i < height)
     {
       digitalWrite(led[i], HIGH);
+      //delayMicroseconds(250);
+      delay(2);
     }
     else
     {
       digitalWrite(led[i], LOW);
     }
-    delayMicroseconds(250);
+    //delayMicroseconds(250);
   }
 
   vol[volCount] = n;   // Save sample for dynamic leveling
@@ -211,12 +213,14 @@ void Vu2() {
     if (i < height)
     {
       digitalWrite(led[i], HIGH);
+      //delayMicroseconds(250);
+      delay(2);
     }
     else
     {
       digitalWrite(led[i], LOW);
     }
-    delayMicroseconds(250);
+    //delayMicroseconds(250);
   }
 
   vol[volCount] = n;                                  // Save sample for dynamic leveling
@@ -273,11 +277,12 @@ void Vu5() {
     if (i < height)
     {
       digitalWrite(led[i], HIGH);
+      delay(2);
     }
     else {
       digitalWrite(led[i], LOW);
     }
-    delayMicroseconds(250);
+    //delayMicroseconds(250);
   }
 
   vol[volCount] = n;   // Save sample for dynamic leveling
@@ -318,12 +323,13 @@ void Vu6() {
     if (i < height)
     {
       digitalWrite(led[i], HIGH);
+      delay(2);
     }
     else
     {
       digitalWrite(led[i], LOW);
     }
-    delayMicroseconds(250);
+    //delayMicroseconds(250);
   }
 
   vol[volCount] = n;   // Save sample for dynamic leveling
@@ -368,12 +374,13 @@ void Vu7() {
     if (i == height)
     {
       digitalWrite(led[i], HIGH);
+      delay(2);
     }
     else
     {
       digitalWrite(led[i], LOW);
     }
-    delayMicroseconds(600);
+    //delayMicroseconds(600);
   }
 
   vol[volCount] = n;   // Save sample for dynamic leveling
@@ -419,12 +426,13 @@ void Vu8() {
     if (i == height)
     {
       digitalWrite(led[i], HIGH);
+      delay(2);
     }
     else
     {
       digitalWrite(led[i], LOW);
     }
-    delayMicroseconds(600);
+    //delayMicroseconds(600);
   }
 
   vol[volCount] = n;   // Save sample for dynamic leveling
@@ -480,7 +488,8 @@ void displayLevel(float level) {
     on = 0;
   }
   else {
-    on = min(16, int(9.0 * delta / Delta));
+    on = min(16, int(35.0 * delta / Delta));// New value, changed 9.0 to 35.0 more sensitivity
+    //on = min(16, int(9.0 * delta / Delta));// Old Value
   }
   // Update the peak if necessary
   if (on > peak) {
@@ -514,7 +523,7 @@ void displayLevel1(float level) {
     on = 0;
   }
   else {
-    on = min(16, int(9.0 * delta / Delta));
+    on = min(16, int(35.0 * delta / Delta));
   }
   // Update the peak if necessary
   if (on > peak) {
